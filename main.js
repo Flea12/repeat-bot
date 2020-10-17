@@ -8,8 +8,8 @@ client.on('ready', () => {
 bot.on("message", message => {
 if (message.author.bot) return
 
-    if (message.content.toLowerCase().startsWith('botspeak')){
-        message.channel.send(message.content.replace(botspeak', ''))
+    if (message.content.toLowerCase().startsWith('repeat')){
+        message.channel.send(message.content.replace(repeat', ''))
         message.delete()
     }
 
